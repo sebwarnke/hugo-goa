@@ -1,3 +1,5 @@
 [home]
 other = "startseite"
-published_on = "VERÖFFENTLICHT AM"
+
+[published_on]
+other = "VERÖFFENTLICHT AM"

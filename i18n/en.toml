@@ -1,3 +1,5 @@
 [home]
 other = "home"
-published_on = "PUBLISHED ON"
+
+[published_on]
+other = "PUBLISHED ON"
