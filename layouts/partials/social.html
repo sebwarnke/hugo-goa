@@ -36,6 +36,6 @@
   <a href="mailto:{{.}}"><i class="fas fa-at" aria-hidden="true"></i></a>
   {{ end }}
   {{ if isset .Site.Params.social "pgp" }}
-  <a href="{{ .Site.BaseURL }}{{ .Site.Params.social.pgp }}"><i class="fas fa-key" aria-hidden="true"></i></a>
+  <a href="{{ .Site.BaseURL }}/{{ .Site.Params.social.pgp }}"><i class="fas fa-key" aria-hidden="true"></i></a>
   {{ end }}
 </section>
