@@ -13,10 +13,10 @@ Grid Layout Styles
     max-width: 768px;
 }
 .gallery .box {
-    float: left;
+    /* float: left; */
     position: relative;
     /* Default: 1 tile wide */
-    width: 100%;
+    /* width: 100%; */
     padding-bottom: 100%; 
 }
 @media only screen and (min-width : 365px) {
