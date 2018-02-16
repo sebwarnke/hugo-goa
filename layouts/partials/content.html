@@ -2,10 +2,10 @@
   <h1 class="title">{{ .Title }}</h1>
 </header>
 <section id="category-pane" class="row meta">
-  {{ if ne .Params.showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-left meta">
-      {{ i18n "published_on" }} {{ .Date.Format .Site.Params.dateformat | upper }}
+      {{ i18n "published_on" | upper}} {{ .Date.Format .Site.Params.dateformat | upper }}
+      {{ if ne .Params.showpagemeta false }}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
       {{ if gt $total 0 }}
@@ -16,27 +16,39 @@
       {{ end }}
       {{ end }}
       {{ end }}
+      {{ end }}
     </h6>
   </div>
-  {{ end }}
 </section>
+{{ if ne .Params.showpagemeta false }}
+{{ if isset .Params "tags" }}
+{{ $total := len .Params.tags }}
+{{ if gt $total 0 }}
 <section id="tag-pane" class="row meta">
-  {{ if ne .Params.showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-left meta">
-      {{ if isset .Params "tags" }}
-      {{ $total := len .Params.tags }}
-      {{ if gt $total 0 }}
       TAGS:
       {{ range $i, $tag := sort $.Params.tags }}
       <a class="tag meta" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">#{{ $tag | upper }}</a>
       {{ end }}
-      {{ end }}
+    </h6>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ if .IsTranslated }}
+<section id="lang-pane" class="row meta">
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+      {{ i18n "languages" | upper}}:
+      {{ range $.Translations }}
+      <a href="{{ .Permalink }}">{{ .Lang | upper}}</a>
       {{ end }}
     </h6>
   </div>
-  {{ end }}
 </section>
+{{ end }}
+{{ end }}
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
     {{ .Content }}

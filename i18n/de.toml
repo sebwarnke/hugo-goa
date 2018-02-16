@@ -2,4 +2,13 @@
 other = "startseite"
 
 [published_on]
-other = "VERÖFFENTLICHT AM"
+other = "veröffentlicht am"
+
+[languages]
+other = "Sprachen"
+
+[prev]
+other = "zurück"
+
+[next]
+other = "weiter"

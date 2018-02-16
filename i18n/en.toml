@@ -2,4 +2,13 @@
 other = "home"
 
 [published_on]
-other = "PUBLISHED ON"
+other = "published on"
+
+[languages]
+other = "languages"
+
+[prev]
+other = "prev"
+
+[next]
+other = "next"
