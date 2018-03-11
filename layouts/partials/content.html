@@ -12,7 +12,7 @@
       @
       {{ $total := sub $total 1 }}
       {{ range $i, $cat := sort $.Params.categories }}
-      <a class="meta" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }}, {{ end }}
+      <a class="meta" href="{{ "/categories/" | relLangURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }}, {{ end }}
       {{ end }}
       {{ end }}
       {{ end }}
@@ -29,7 +29,7 @@
     <h6 class="text-left meta">
       TAGS:
       {{ range $i, $tag := sort $.Params.tags }}
-      <a class="tag meta" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">#{{ $tag | upper }}</a>
+      <a class="tag meta" href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">#{{ $tag | upper }}</a>
       {{ end }}
     </h6>
   </div>
