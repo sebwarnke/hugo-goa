@@ -12,3 +12,6 @@ other = "zurück"
 
 [next]
 other = "weiter"
+
+[readmore]
+other = "weiterlesen..."

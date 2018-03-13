@@ -12,3 +12,6 @@ other = "prev"
 
 [next]
 other = "next"
+
+[readmore]
+other = "read more..."
