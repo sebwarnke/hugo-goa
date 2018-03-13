@@ -263,7 +263,15 @@ header.title
     border-radius: 2px;
     padding: 2px 4px;
 }
-span.tag{
+span.tag {
     font-size: 83%;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+a.readmore {
+    font-size: 83%;
+    font-family: 'Roboto Slab', serif;
+    background-color: #ddd;
+    border-radius: 2px;
+    padding: 2px 4px;
 }
