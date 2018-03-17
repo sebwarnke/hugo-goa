@@ -213,7 +213,7 @@ h6.meta
     color: #bbb;
 }
 section.meta {
-    margin-top: 
+    /* margin-top:  */
 }
 .powered
 {
@@ -274,4 +274,8 @@ a.readmore {
     background-color: #ddd;
     border-radius: 2px;
     padding: 2px 4px;
+}
+
+.content h4 {
+    font-family: 'Roboto Slab', serif;
 }
