@@ -276,7 +276,7 @@ a.readmore {
     padding: 2px 4px;
 }
 
-.content h4
+.content h4,
 .content h5 {
     font-family: 'Roboto Slab', serif;
 }
