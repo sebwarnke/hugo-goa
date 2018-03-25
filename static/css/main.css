@@ -280,3 +280,9 @@ a.readmore {
 .content h5 {
     font-family: 'Roboto Slab', serif;
 }
+
+.notice {
+    font-family: 'Roboto Slab', serif;
+    font-weight: semi-bold;
+    text-align:center;
+}
