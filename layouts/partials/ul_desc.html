@@ -1,0 +1,7 @@
+<section id="list-pane" class="row list">
+    <ul >
+      {{ range .Data.Pages.ByPublishDate.Reverse }}
+      {{ partial "li.html" . }}
+      {{end}}
+    </ul>
+</section>
